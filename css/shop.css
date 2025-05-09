@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    -webkit-tap-highlight-color:transparent;
 }
 html{
     font-size: 62.5%;
@@ -12,7 +13,8 @@ h1,h2,h3,h4,h5,h6{
     font-family: "PT Sans", sans-serif;
 }
 .container{
-    width: 1170px;
+    width: 1200px;
+    padding: 0 15px;
     max-width: 100%;
     min-height: 100px;
     margin-left: auto;
@@ -61,8 +63,9 @@ button{
     top:100%;
     left: 0;
     opacity: 0;
+    visibility: hidden;
     transform: scale(1,0);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.7s ease-in-out;
     transform-origin: 100% 0;
 }
 .nav-item .nav-item1 li{
@@ -82,8 +85,9 @@ button{
     transition: color 0.3s ease,translate 0.3s ease;
     translate:0;
 }
-.nav li:hover .nav-item1{
+input[type="checkbox"]:checked ~ .nav-item1{
     opacity: 1;
+    visibility:visible;
     transform: scale(1);
 }
 .nav .nav-item1 li:hover{
@@ -103,9 +107,6 @@ button{
     font-size: 1.5rem;
     letter-spacing: 1.1px;
     font-weight: 700;
-}
-.nav-item li + li{
-    border-top: 1px solid #ccc9;
 }
 .user-action{
     display: flex;
@@ -210,7 +211,7 @@ input[type="checkbox"]:checked ~ .form-btn{
     font-size: 1.5rem;
 }
 .form-search .input-search{
-    color: #eeeeee;
+    color: rgba(0,0,0,0.76);
     width: 100%;
     height: 100%;
     border: none;
@@ -347,7 +348,7 @@ input[type="checkbox"]:checked ~ .form-btn{
 } 
 .product-item>a .logo-item{
    width: 100%;
-   height: 100%;
+   /* height: 100%; */
    object-fit: contain;
    transform: scale(1);
    transition: transform 0.5s ease;

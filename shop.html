@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
     <div class="wrapper">
@@ -18,13 +19,21 @@
                 <div class="container container-header">
                     <!-- Start Header -->
                     <div class="header">
-                        <a href="/">
-                            <img src="./img/img-logo.png" alt="logo-scholars">
-                        </a>
+                        <div class="logo-wrapper">
+                            <a href="/">
+                                <img src="./img/img-logo.png" alt="logo-scholars">
+                            </a>
+                            <label for="nav" class="nav-label">
+                                <i class="fa-solid fa-bars"></i>
+                            </label>
+                        </div>
                         <!-- Start Navigation -->
+                        <input type="checkbox" id="nav" hidden>
                         <ul class="nav">
                             <li class="nav-item">
                                 <a href="">Home</a>
+                                <label for="submenu"><i class="fa-solid fa-angle-down"></i></label>
+                                <input type="checkbox" id="submenu" hidden>
                                 <ul class="nav-item1">
                                     <li><a href="">Home version one</a></li>
                                     <li><a href="">Home version Two</a></li>
@@ -33,6 +42,8 @@
                             </li>
                             <li class="nav-item">
                                 <a href="">COURSES</a>
+                                <label for="submenu1"><i class="fa-solid fa-angle-down"></i></label>
+                                <input type="checkbox" id="submenu1" hidden>
                                 <ul class="nav-item1">
                                     <li><a href="">Course 2 Column</a></li>
                                     <li><a href="">Course 3 Column</a></li>
@@ -41,6 +52,8 @@
                             </li>
                             <li class="nav-item">
                                 <a href="">EVENTS</a>
+                                <label for="submenu2"><i class="fa-solid fa-angle-down"></i></label>
+                                <input type="checkbox" id="submenu2" hidden>
                                 <ul class="nav-item1">
                                     <li><a href="">Event List</a></li>
                                     <li><a href="">Event Grid</a></li>
@@ -49,6 +62,8 @@
                             </li>
                             <li class="nav-item">
                                 <a href="">Pages</a>
+                                <label for="submenu3"><i class="fa-solid fa-angle-down"></i></label>
+                                <input type="checkbox" id="submenu3" hidden>
                                 <ul class="nav-item1">
                                     <li><a href="">Our teachers</a></li>
                                     <li><a href="">teachers profile</a></li>
@@ -61,6 +76,8 @@
                             </li>
                             <li class="nav-item">
                                 <a href="">PORTFOLIO</a>
+                                <label for="submenu4"><i class="fa-solid fa-angle-down"></i></label>
+                                <input type="checkbox" id="submenu4" hidden>
                                 <ul class="nav-item1">
                                     <li><a href="">portfolio 2 column</a></li>
                                     <li><a href="">portfolio 3 column</a></li>
@@ -69,6 +86,8 @@
                             </li>
                             <li class="nav-item">
                                 <a href="">BLOG</a>
+                                <label for="submenu5"><i class="fa-solid fa-angle-down"></i></label>
+                                <input type="checkbox" id="submenu5" hidden>
                                 <ul class="nav-item1">
                                     <li><a href="">Blog</a></li>
                                     <li><a href="">Blog details</a></li>
@@ -76,6 +95,8 @@
                             </li>
                             <li class="nav-item">
                                 <a href="">SHOP</a>
+                                <label for="submenu6"><i class="fa-solid fa-angle-down"></i></label>
+                                <input type="checkbox" id="submenu6" hidden>
                                 <ul class="nav-item1">
                                     <li><a href="">Shop Page</a></li>
                                     <li><a href="">Shop Details</a></li>
@@ -317,7 +338,7 @@
                             <li><a href="">Business Plus</a></li>
                         </ul>
                        </div>
-                    <div class="footer-list">
+                    <div class="footer-list bottom">
                         <h5 class="heading">Support</h5>
                         <ul class="list-footer">
                             <li><a href="">Support</a></li>
